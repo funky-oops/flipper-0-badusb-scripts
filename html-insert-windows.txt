@@ -13,7 +13,7 @@ REM save code and copy adress
 STRING 
 CTRL-SHIFT s
 DELAY 500
-REM you can change the name, but you allso need to change it on line 32.
+REM you can change the name, but you allso need to change it on line 33.
 STRING name.html
 TAB
 REPEAT 6
