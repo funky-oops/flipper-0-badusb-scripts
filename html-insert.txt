@@ -1,0 +1,33 @@
+REM    Made by Joshua Robak
+DEFAULTDELAY 500
+
+REM open a new tab in notepad
+GUI r
+STRINGLN notepad 
+CTRL n
+
+REM notepad is open, type in html:
+STRING 
+
+REM save code and copy adress
+STRING 
+CTRL-SHIFT s
+DELAY 500
+REM you can change the name, but you allso need to change it on line 32.
+STRING name.html
+TAB
+REPEAT 6
+ENTER
+CTRL C
+ESC
+SHIFT TAB
+REPEAT 2
+ENTER
+ENTER
+
+REM open file in chrome
+GUI r
+DELAY 500
+STRING "C:\Program Files\Google\Chrome\Application\chrome.exe" file:
+CTRL v
+STRINGLN \name.html
